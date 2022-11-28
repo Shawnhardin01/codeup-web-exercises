@@ -24,7 +24,6 @@ alert(sayHello("code up"));
 let helloMessage  = sayHello("shawn hardin");
 console.log(helloMessage)
 
-
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
@@ -32,7 +31,7 @@ console.log(helloMessage)
  * console.
  */
 let myName = "shawn hardin"
-sayHello(myName)
+helloMessage = sayHello(myName)
 console.log(sayHello(myName))
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it  in a variable named random
@@ -56,13 +55,10 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-function isTwo(number){
+function isTwo(){
     return (random === 2)
-
 }
-
 console.log(isTwo())
-
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -74,26 +70,28 @@ console.log(isTwo())
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(){
-    return (34 * 0.15 )
+function calculateTip(totalBill,Tip){
+    return (totalBill * Tip )
 
 }
 
 console.log(calculateTip())
+calculateTip()
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-alert(`your total is ${34} `)
-alert(`you should tip ${calculateTip()} which is 15%`)
-console.log(prompt(`would you like to tip ${ calculateTip()}`))
+let Tip = prompt(`what was you bill `)
+let totalBill = prompt(`how much would you like to tip`)
+alert(`you should tip ${calculateTip()}
 
 
 /**
  * TODO:
- * Create a function named `applyDiscount`. This function should accept a price
+ * Create a function named "applyDiscount". This function should accept a price
  * (before a discount is applied), and a discount percentage (a number between 0
  * and 1). It should return the result of applying the discount to the original
  * price.
@@ -105,19 +103,3 @@ console.log(prompt(`would you like to tip ${ calculateTip()}`))
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount(){
- return ( 34 * .1)
-
-}
-
-applyDiscount()
-console.log(34 -applyDiscount())
-
-function finalTotal(){
-    return applyDiscount() + calculateTip() + 34
-
-}
-finalTotal()
-console.log(finalTotal())
-alert (`your final total is ${finalTotal()}`)
-

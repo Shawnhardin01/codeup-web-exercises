@@ -84,19 +84,19 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];{
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-let analyzeColor =(prompt("whats your fav color"))
+let analyzeColor =(prompt("Whats your favorite color?"))
 switch(analyzeColor) {
     case "red":
-        alert("bricks are red");
+        alert("Bricks are red");
         break;
     case "blue":
-        alert("the sea is blue");
+        alert("The sea is blue");
         break;
     case "green":
-        alert("grass is green")
+        alert("Grass is green")
         break
     case "yellow":
-        alert("the sun is yellow")
+        alert("The sun is yellow")
         break
     default:
         alert(analyzeColor + " I dont know that color ");
@@ -125,27 +125,30 @@ switch(analyzeColor) {
  */
 function calculateTotal(total) {
     if (luckyNumber === 0){
-        return
-        console.log(total * 0)}
+        return ( 0 )}
 
     else if (luckyNumber === 1) {
-        return
-        console.log(total *.10)
+        return ((total *.10))
     }
     else if (luckyNumber === 2 ) {
-        return console.log(total *.25)
+        return ((total *.25))
     }
     else if (luckyNumber === 3) {
-        return console.log (total *.35)
+        return ((total *.35))
     }
     else if (luckyNumber === 4 ) {
-        return console.log( total *.50)
+        return (( total *.50))
+    }
+    else if (luckyNumber=== 5){
+        return (total)
     }
     else
-        return console.log(total-total)
+        return (total)
+
 }
 
 calculateTotal()
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -156,11 +159,11 @@ calculateTotal()
  */
 // Generate a random number between 0 and 6
  var luckyNumber = Math.floor(Math.random() * 6);
-calculateTotal(luckyNumber)
-prompt(`what was you total`)
+let total =prompt(`what was you total`)
+console.log(calculateTotal(total))
 alert(`your lucky number is ${luckyNumber}`)
-alert(` your total before the discount was `)
-alert()
+alert(` your total before the discount was ${total} `)
+alert(`your bill after the discount is ${total-(calculateTotal(total))}`)
 
 
 /**
@@ -181,3 +184,35 @@ alert()
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+function plusH (uNumber){
+    return uNumber+100
+
+}
+plusH()
+let uNumberpick = confirm(`would you like to type number`)
+if (uNumberpick === true) {
+  let uNumber =  prompt(`type a number`)
+
+if (uNumber %2===0) {
+    alert(`this number is even`)
+    alert(`your number plus 100 is ${plusH(uNumber)}`)
+    if(uNumber>0){
+        alert (`your number is positive`)}
+        else if (uNumber <0){
+            alert(`your number is negative`)
+        }
+else if(uNumber %2!==0){
+    alert (`your number was odd`)}
+if(uNumber<0){
+    alert (`your number is negative`)}
+else if (uNumber>0){
+    alert(`your number is positive`)}
+}
+}
+else if (uNumberpick === false){
+    window.close()}
+
+
+
+
+

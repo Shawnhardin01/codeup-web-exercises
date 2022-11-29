@@ -159,6 +159,10 @@ calculateTotal()
 calculateTotal(luckyNumber)
 prompt(`what was you total`)
 alert(`your lucky number is ${luckyNumber}`)
+alert(` your total before the discount was `)
+alert()
+
+
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they

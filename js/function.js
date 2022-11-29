@@ -70,12 +70,12 @@ console.log(isTwo())
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(totalBill,Tip){
-    return (totalBill * Tip )
-
+function calculateTip(Tip,totalBill){
+    return (Tip * totalBill )
 }
-
-console.log(calculateTip())
+console.log(calculateTip(0.20, 20))
+console.log( calculateTip(0.25, 25.50))
+console.log( calculateTip(0.15, 33.42))
 calculateTip()
 
 /**
@@ -84,9 +84,10 @@ calculateTip()
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-let Tip = prompt(`what was you bill `)
-let totalBill = prompt(`how much would you like to tip`)
-alert(`you should tip ${calculateTip()}
+let Tip = prompt(`how much would you like to tip`)
+let totalBill = prompt(`how much was bill`)
+console.log(calculateTip(Tip,totalBill))
+ alert(`you should tip ${calculateTip(Tip,totalBill)}`)
 
 
 /**
@@ -103,3 +104,11 @@ alert(`you should tip ${calculateTip()}
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+function applyDiscount(originalPrice,discountPercent) {
+   return (totalBill-(totalBill * .1)  )
+
+}
+applyDiscount()
+console.log(applyDiscount())
+
+alert(`your total bill with a 10% is ${applyDiscount()}`)

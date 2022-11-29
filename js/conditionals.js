@@ -191,27 +191,29 @@ function plusH (uNumber){
 plusH()
 let uNumberpick = confirm(`would you like to type number`)
 if (uNumberpick === true) {
-  let uNumber =  prompt(`type a number`)
+    let uNumber = prompt(`type a number`)
+    let uNumberInt = parseInt(uNumber);
 
-if (uNumber %2===0) {
-    alert(`this number is even`)
-    alert(`your number plus 100 is ${plusH(uNumber)}`)
-    if(uNumber>0){
-        alert (`your number is positive`)}
-        else if (uNumber <0){
-            alert(`your number is negative`)
+    if (uNumberInt % 2 === 0) {
+        alert(`this number is even`)
+        alert(`your number plus 100 is ${uNumberInt + 100}`)
+        if (uNumberInt > 0) {
+            alert(`your number is positive`)
+        } else if (uNumberInt < 0)
+            alert(`your number is negative`) }
+        else if (uNumberInt % 2 !== 0) {
+            alert(`your number was odd`)
+        alert(`your number plus 100 is ${uNumberInt + 100}`)
         }
-else if(uNumber %2!==0){
-    alert (`your number was odd`)}
-if(uNumber<0){
-    alert (`your number is negative`)}
-else if (uNumber>0){
-    alert(`your number is positive`)}
-}
-}
-else if (uNumberpick === false){
-    window.close()}
+        if (uNumberInt < 0) {
+            alert(`your number is negative`)
+        } else if (uNumberInt > 0) {
+            alert(`your number is positive`)
+        }
+    } else if (uNumberpick === false) {
+        window.close()
 
+}
 
 
 

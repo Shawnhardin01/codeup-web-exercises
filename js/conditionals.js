@@ -85,7 +85,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];{
  * function to show it to the user.
  */
 let analyzeColor =(prompt("Whats your favorite color?"))
-switch(analyzeColor) {
+switch(analyzeColor.toLowerCase()) {
     case "red":
         alert("Bricks are red");
         break;
@@ -143,7 +143,7 @@ function calculateTotal(total) {
         return (total)
     }
     else
-        return (total)
+        return (total+total)
 
 }
 
@@ -184,11 +184,7 @@ alert(`your bill after the discount is ${total-(calculateTotal(total))}`)
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-function plusH (uNumber){
-    return uNumber+100
 
-}
-plusH()
 let uNumberpick = confirm(`would you like to type number`)
 if (uNumberpick === true) {
     let uNumber = prompt(`type a number`)
@@ -197,19 +193,21 @@ if (uNumberpick === true) {
     if (uNumberInt % 2 === 0) {
         alert(`this number is even`)
         alert(`your number plus 100 is ${uNumberInt + 100}`)
-        if (uNumberInt > 0) {
+        if (uNumberInt >= 0) {
             alert(`your number is positive`)
-        } else if (uNumberInt < 0)
+        } else if (uNumberInt <= 0)
             alert(`your number is negative`) }
+
         else if (uNumberInt % 2 !== 0) {
-            alert(`your number was odd`)
+        alert(`your number was odd`)
         alert(`your number plus 100 is ${uNumberInt + 100}`)
-        }
-        if (uNumberInt < 0) {
+
+        if (uNumberInt <= 0) {
             alert(`your number is negative`)
-        } else if (uNumberInt > 0) {
+        } else if (uNumberInt >= 0)
             alert(`your number is positive`)
-        }
+    }
+
     } else if (uNumberpick === false) {
         window.close()
 

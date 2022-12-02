@@ -79,5 +79,4 @@ let names = ['Schmidt','Billy','Cody','Mike']
         return(console.log (myArray3[3]));
     }
     third()
-
 })();

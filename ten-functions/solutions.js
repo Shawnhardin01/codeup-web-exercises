@@ -21,11 +21,34 @@
  * and
  * concat
  */
-function isTrue(input) {
-    // return input === true;
-    if(typeof input === "number"){
-    }
-    if(typeof input === "string"){
-        return false;
-    }
+function isTrue(x) {
+     return x === true;
+}
+function isFalse(y){
+return y === false;
+}
+function isEven (input1){
+    return input1 % 2 === 0
+}
+function isEqual (input2,input23){
+    return input2 == input23
+}
+function isIdentical (input3,input34){
+    return input3 === input34
+}
+function addOne (input4){
+   return parseFloat(input4) +1;
+}
+function not (input5){
+    return  !input5;
+}
+function or (input5){
+ return  input5 || input5
+}
+function and (input6,input7){
+ return input6 && input7
+}
+function concat (input8,input9){
+
+    return (input8.toString() + input9.toString())
 }

@@ -1,3 +1,4 @@
+
 (function(){
     "use strict";
 
@@ -23,7 +24,7 @@ let names = ['Schmidt','Billy','Cody','Mike']
      */
     console.log(`                               `)
 
-    console.log(names[0]);
+        console.log(names[0]);
         console.log(names[1]);
         console.log(names[2]);
         console.log(names[3]);
@@ -61,18 +62,22 @@ let names = ['Schmidt','Billy','Cody','Mike']
     console.log(`                               `)
     //1
     function first(){
-       return (console.log (names[0]));
+        const myArray =[1, 2, 3, 4, 5]
+       return (console.log (myArray[0]));
 
     }
     first()
     //2
+    const myArray2 =[1, 2, 3, 4, 5]
     function second() {
-        return (console.log(names[1]));
+        return (console.log (myArray2[1]));
     }
     second()
     //3
+    const myArray3 =[1, 2, 3, 4, 5]
     function third(){
-        return(console.log (names[3]));
+        return(console.log (myArray3[3]));
     }
     third()
+
 })();

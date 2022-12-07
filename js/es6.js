@@ -37,7 +37,13 @@ const name = 'Shawn Hardin';
 const email = 'youreallthinkim@gonnadoxmyself.com';
 const languages = "javaScript" ;
 // TODO: rewrite the object literal using object property shorthand
-
+let me ={
+    firstName : "shawn",
+    lastName : "Hardin",
+    email:"youreallthinkim@gonnadoxmyself.com",
+    languages: "javaScript"
+}
+console.log(me)
 users.push({
     name: name,
     email: email,
@@ -45,8 +51,8 @@ users.push({
 });
 
 // TODO: replace `var` with `let` in the following variable declarations
-var emails = [];
-var names = [];
+let emails = [];
+let names = [];
 
 // TODO: rewrite the following using arrow functions
 users.forEach(function(user) {
@@ -55,9 +61,10 @@ users.forEach(function(user) {
 users.forEach(function(user) {
     return names.push(user.name);
 });
-
+const forEach = (user) => `${emails.push}` + user + `!`;
+forEach()
 // TODO: replace `var` with `let` in the following declaration
-var developers = [];
+let developers = [];
 users.forEach(function(user) {
     // TODO: rewrite the code below to use object destructuring assignment
     //       note that you can also use destructuring assignment in the function

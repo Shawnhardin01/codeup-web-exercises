@@ -1,9 +1,33 @@
-h1 {
-    color: navajowhite;
-
+header {
+    text-align: center;
+     color:#D1E0FF ;
+    text-decoration: underline;
 }
-.fancy-header {
-    color: blue;
-
+body{
+    background-image: url("https://pbs.twimg.com/media/E1lZrlkVcAMBwPs?format=jpg&name=large" );
+    background-size: contain;
+    font-style: italic;
 }
-
+ul {
+    list-style-type: square;
+}
+li{
+    color: peachpuff;
+}
+td{
+  color: peachpuff;
+}
+tr{
+   color: #D1E0FF;
+}
+a{
+   color: #373fff ;
+    text-align: center;
+}
+h2{
+    color: #373fff;
+}
+p{
+    text-align: center;
+    color: #D1E0FF;
+}

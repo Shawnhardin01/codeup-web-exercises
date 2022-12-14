@@ -6,6 +6,7 @@ header {
 body{
     background-image: url("https://pbs.twimg.com/media/E1lZrlkVcAMBwPs?format=jpg&name=large" );
     background-size: contain;
+    background-size: 100%;
     font-style: italic;
 }
 ul {

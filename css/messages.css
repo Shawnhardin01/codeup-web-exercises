@@ -10,6 +10,7 @@ body, html {
     color: #403e96;
     background-color: #d0defc ;
 
+
 }
 
 .message-success{
@@ -33,6 +34,7 @@ body, html {
 .message{
     margin: 9px;
     padding: 6px;
+    border:1px solid gray;
     border-radius: 5px ;
     outline-width: 3px;
 

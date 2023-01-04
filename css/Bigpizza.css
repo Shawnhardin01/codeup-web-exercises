@@ -1,0 +1,12 @@
+.Jumbotron{
+    background: url("../img/Bigpizza.png"
+    );
+    height: 346px;
+    background-size: cover;
+}
+.Jumbotron>div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+}

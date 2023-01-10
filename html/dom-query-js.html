@@ -51,6 +51,7 @@
     // TODO: Uncomment the next line and get all list items
     var listItems = document.querySelectorAll("li");
     // TODO: Set text color on every other list item to grey
+    var listener = function (event) {
     for (let i = 0 ; i < listItems.length ; i++){
       if (i % 2 === 0){
         listItems[i].style.color = "grey";
@@ -60,8 +61,8 @@
       }
     }
 
-    listItems.getAttribute("data-dbid").style.color = "#6699CC"
-
+   }
+    document.getElementById('btn2').addEventListener('click', listener);
     // TODO: Set text color of li with dbid = 1 to blue
 
     // TODO: Uncomment the next line and get all elements with class name sub-paragraph

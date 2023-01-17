@@ -7,14 +7,24 @@
 </head>
 <body>
 <script>"use strict";
-
 $(function() {
-  alert( 'The DOM has finished loading!' )
+   $('li').css('font-size','20px')
+});
+// $('p').css('font-size', '200px');
+$(function() {
+    $('.codeup').css('background-color','yellow')
 });
 
-
-
-
+$(function() {
+    alert($('#container').html())
+});
 </script>
+<h1 id="container" class="codeup">hi</h1>
+    <p id="wha" class="codeup">whats</p>
+<ul id="section3" class="codeup">
+<li>
+    up
+</li>
+</ul>
 </body>
 </html>

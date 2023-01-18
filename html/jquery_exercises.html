@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-<script>"use strict";
-$(function() {
-   $('li').css('font-size','20px')
-});
-// $('p').css('font-size', '200px');
-$(function() {
-    $('.codeup').css('background-color','yellow')
-});
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-$(function() {
-    alert($('#container').html())
-});
+<script>
+    let mySelectedText = "";
+    $(document).ready(function() {
+        $("#container").click(function () {
+            $(this).css('background-color', 'red')
+        });
+        $("li").hover(hoverOn, hoverOff);
+
+        function hoverOn() {
+            $(this).css("color", "red")
+        }
+
+        function hoverOff() {
+            $(this).css("color", "black")
+        }
+
+        $("#wha").dblclick(function () {
+            $(this).css("font-size", "18px")
+        })
+    });
 </script>
+
 <h1 id="container" class="codeup">hi</h1>
     <p id="wha" class="codeup">whats</p>
 <ul id="section3" class="codeup">
@@ -26,5 +38,6 @@ $(function() {
     up
 </li>
 </ul>
+
 </body>
 </html>

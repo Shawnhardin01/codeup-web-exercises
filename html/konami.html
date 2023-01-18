@@ -28,30 +28,23 @@
           count = 0;
           return;
         };
-
         key = e.keyCode;
-
 
         if(!started){
           if(key == 38){
-            started = true;
-          }
+            started = true;}
         }
-
 
         if (started){
 
           if (konamikeys[count] == key){
-            count++;
-          } else {
-
+            count++;}
+          else {
             reset();
           }
           if (count == 11){
               $( "button" ).click(function() {
-              $( "p" ).toggle();
-              
-            });
+              $( "p" ).toggle();});
             reset();
           }
         } else {
@@ -59,7 +52,7 @@
         }});
     }}
   $(document).keyup(function(event){
-    console.log(event.keyCode);});
+  console.log(event.keyCode);});
   global.konami();
 
 

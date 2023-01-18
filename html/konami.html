@@ -10,7 +10,7 @@
 
 <p>Error, Must Enter K Password</p>
 
-<p style="display: none">< img src="../img/giphy.gif"> </p>
+<p style="display: none"><img src="../img/giphy.gif"> </p>
 
 
 <script>
@@ -58,7 +58,10 @@
           reset();
         }});
     }}
+  $(document).keyup(function(event){
+    console.log(event.keyCode);});
   global.konami();
+
 
 </script>
 </body>

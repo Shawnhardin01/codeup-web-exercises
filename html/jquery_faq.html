@@ -7,12 +7,7 @@
     .invisible{
         visibility: hidden;
     }
-    .highlight{
-        background: khaki;
-    }
-    .bluefont{
-        color: #3B94D9;
-    }
+
     .bigfont{
         font-weight: bolder;
     }
@@ -156,37 +151,19 @@
     $(document).ready(function () {
         $("dd").addClass("invisible");
         // $(".invisible").css("visibility", "hidden")
-
-
         $("#faqButton").click(function () {
             $("dd").toggleClass("invisible");
         });
-
-        $("ul").children().addClass("highlight");
         $("#listButton").click(function () {
-            $("ul").children().toggleClass("highlight");
+            $("ul li:last-child").css("background-color", "khaki ");
         });
-
         $("h3").click(function() {
             $("ul").children().toggleClass("bigfont")
         });
-
-
-
         $("li").click(function () {
-            $('li').each(function(index) {
-                if (index % 2 !== 1) {
-                    $(this).toggleClass("bluefont");
-                }
+           $(this).parent().children().first().css("color","#3B94D9")
             });
         });
-      });
-
-
-
-
-
-
 </script>
 
 </body>

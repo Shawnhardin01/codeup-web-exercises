@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script>
+    $.ajax("/data/blog.json").done(function(data, status) {
+        console.log("Request status: " + status);
+        console.log(data);
+    });
+</script>
+
+<div class="post">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur assumenda earum exercitationem expedita impedit, ipsa nemo nostrum perferendis perspiciatis possimus, praesentium quae, quisquam reprehenderit sint unde veniam! Eligendi iusto maiores odio rerum sint. Atque delectus, dolor, exercitationem in ipsam itaque iure libero natus nobis odio possimus quasi recusandae reiciendis rem sed, tenetur veritatis. Consequuntur dolor fugiat optio repudiandae suscipit! Accusamus autem corporis cum delectus et excepturi id, illo laboriosam libero mollitia nisi nobis nostrum obcaecati perspiciatis placeat quas quod saepe sed similique sit veritatis voluptas voluptates? Aperiam deleniti dolor doloremque, dolores eaque et facilis fugiat fugit, illum, iusto laboriosam officia perferendis placeat quos similique unde voluptatem voluptates voluptatibus. Ab atque, cupiditate delectus fugiat iusto provident quaerat reiciendis voluptatibus! Ad aliquam architecto aspernatur blanditiis commodi corporis distinctio dolorem esse excepturi exercitationem ipsam laborum molestias non porro quas quasi quo ratione sapiente sunt suscipit vel veniam, vero voluptates! Aut ipsa, tempore?</p>
+</div>
+</body>
+</html>

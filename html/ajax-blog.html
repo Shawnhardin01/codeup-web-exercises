@@ -8,12 +8,23 @@
 <body>
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 <script>
+    $.ajax("/data/blog.json").done(function(data) {
+        console.log(data);
+        var html = ''
+        data.forEach(function(book) {
+            html += `
+            <div>
 
+            <p> ${book.title}</p>
+</div>
+ `
 
+        $(`#post`).html(html) });
+    });
 </script>
 
 <div class="post">
-
+ <p>  </p>
 </div>
 </body>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promises</title>
+  <script src="../js/promises.js"></script>
+    <script src="../js/keys.js"></script>
+</head>
+<body>
+
+<!--<script>   async function blurb (){-->
+
+<!--    fetch( "https://api.github.com/users/Shawnhardin01/received_events/public")-->
+<!--        .then(response => response.json())-->
+<!--        .then(users => { users.forEach( userObj =>-->
+<!--        { console.log(userObj);})-->
+<!--        })-->
+<!--        .catch(error => console.error(error));-->
+<!--    -->
+<!--}-->
+<!--blurb();-->
+<!--</script>-->
+
+<script>( async function () {
+    let url = "https://api.github.com/users/Shawnhardin01/received_events/public"
+    let apikey = MY_API_KEY
+
+    function getLastCommit(userName, apiKey) {
+        const url = "https://api.github.com/users/Shawnhardin01/received_events/public"
+    }
+
+    fetch(url,
+        {
+            headers:
+                {
+                    'Athuorization': `token ${apikey}`
+
+                }.then(function (response) {
+                    return response.json();
+                }).then(function (data) {
+                    return data.filter(function (event) {
+                        if (event.type === "Pushevent"
+                        ) [0].created_at;
+                    })
+                }),
+        })
+
+    const lastCommitDate = await  getLastCommit
+    ("Shawnhardin01",MY_API_KEY).catch(function(errMsg){
+
+    })
+})();</script>
+</body>
+</html>
